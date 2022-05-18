@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 31px;
+}
+
+.container {
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-flow: row wrap;
+    text-align: justify;
+}
+
+p {
+    margin-top: 30px;
+}
+
+.col {
+    margin-top: 10px;
+    padding: 15px;
+    margin: 1%;
+    background: #aaa;
+    border: 1px solid black;
+}
+
+/* desktop */
+@media (min-width:992px) {
+    .col-ld-4 {
+        flex-basis: 31.33%;
+    }
+}
+
+/* tablet */
+@media (min-width:768px) and (max-width:991px) {
+    .col-md-6 {
+        flex-basis: 48%;
+    }
+
+    .col-md-12 {
+        flex-basis: 100%;
+    }
+}
+
+/* phone */
+@media (max-width:767px) {
+    .col-sd-12 {
+        flex-basis: 98%;
+    }
+}
+
+/* --------------- top right captions --------------- */
+span {
+    font-weight: bold;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    float: right;
+    position: relative;
+    right: -15px;
+    top: -15px;
+    padding: 5px 20px 5px 20px;
+    margin-top: 0;
+}
+
+.span-left {
+    background: rgb(199, 124, 124);
+}
+
+.span-center {
+    background: rgb(187, 65, 65);
+    color: #ffffff;
+}
+
+.span-right {
+    background: rgb(231, 229, 94);
+    color: #070707;
+}
+/* --------------- #top right captions --------------- */
